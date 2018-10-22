@@ -2,9 +2,11 @@
   "name": "movie-polling",
   "version": "1.0.0",
   "description": "Movie polling Application based on Express, Node and MySQL",
-  "main": "app.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon app.js --exec babel-node --presets babel-preset-env'"
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,10 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1"
+    "nodemon": "^1.18.4"
   }
 }
