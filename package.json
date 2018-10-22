@@ -1,0 +1,28 @@
+{
+  "name": "movie-polling",
+  "version": "1.0.0",
+  "description": "Movie polling Application based on Express, Node and MySQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node --presets babel-preset-env'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reeversedev/movie-polling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reeversedev/movie-polling/issues"
+  },
+  "homepage": "https://github.com/reeversedev/movie-polling#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
