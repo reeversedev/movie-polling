@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 
-import movie from "../routes/movie";
-import user from "../routes/user";
+import movie from "./routes/movie";
+import user from "./routes/user";
 
 import config from "../config";
 
