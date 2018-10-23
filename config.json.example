@@ -1,0 +1,3 @@
+{
+  "mongo": "mongodb://movingo:movingo123@ds159953.mlab.com:59953/movingo"
+}
