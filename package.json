@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/reeversedev/movie-polling#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
