@@ -23,7 +23,7 @@ const app = express();
 
 app.use(cors());
 
-// app.use("/movie", movie);
+app.use("/movie", movie);
 // app.use("/user", user);
 
 app.listen("3000", () => {
