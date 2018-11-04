@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import bodyParser from "body-parser";
 
 import movie from "./routes/movie";
 import user from "./routes/user";
@@ -22,6 +23,12 @@ mongoose.Promise = global.Promise;
 const app = express();
 
 app.use(cors());
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
 
 app.use("/movie", movie);
 // app.use("/user", user);
